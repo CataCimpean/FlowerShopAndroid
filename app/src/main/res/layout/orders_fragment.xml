@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <GridLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:columnCount="3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp">
+
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DeliverTo:"
+            android:id="@+id/DelivertToText"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:textSize="20sp"
+            android:id="@+id/textView_deliverTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DeliverTo"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/textView_Price"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnSpan="2" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:textSize="20sp"
+            android:id="@+id/textView_AddressTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AddressTo"
+            android:layout_below="@+id/textView_Price"
+            android:layout_centerHorizontal="true"
+            android:layout_row="2"
+            android:layout_column="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AddresToText"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:text="Addres:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/OrderDateText"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:textSize="20sp"
+            android:text="OrderDate:"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_row="3"
+            android:layout_column="0" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:textSize="20sp"
+            android:id="@+id/textView_orderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OrderDate"
+            android:layout_alignStart="@+id/textView_deliverTo"
+            android:layout_row="4"
+            android:layout_column="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/OrderIdText"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:text="OrderId:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_row="5"
+            android:layout_column="0" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_row="7"
+            android:layout_column="0" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:textSize="20sp"
+            android:id="@+id/textView_orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OrderId"
+            android:layout_alignStart="@+id/textView_orderDate"
+            android:layout_row="6"
+            android:layout_column="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/PriceText"
+            android:layout_row="8"
+            android:layout_column="0"
+            android:text="Price:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:textSize="20sp"
+            android:id="@+id/textView_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:layout_toStartOf="@+id/textView_AddressTo"
+            android:layout_row="8"
+            android:layout_column="1" />
+
+        <Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_row="9"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/flowerTypeText"
+            android:layout_row="10"
+            android:layout_column="0"
+            android:text="Flower:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:textSize="20sp"
+            android:id="@+id/textView_flowerType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flower"
+            android:layout_toStartOf="@+id/textView_AddressTo"
+            android:layout_row="10"
+            android:layout_column="1" />
+
+
+    </GridLayout>
+
+</RelativeLayout>
